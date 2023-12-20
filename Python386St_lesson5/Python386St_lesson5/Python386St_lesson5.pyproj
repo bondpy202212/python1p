@@ -1,0 +1,66 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>fa945b5f-dd54-49fd-95f9-7dd642700f74</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>a11_homework.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Python386St_lesson5</Name>
+    <RootNamespace>Python386St_lesson5</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="a10_list_max.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a11_homework.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a12_homework_2.py" />
+    <Compile Include="a1_list.py" />
+    <Compile Include="a2_list_slices.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a3_list_append_clear.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a4_list_extend_index.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a5_list_pop_revorse.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a6_list_sort.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a7_list_for.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a8_list_example.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a9_list_squares.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
