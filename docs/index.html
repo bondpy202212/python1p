@@ -21,13 +21,32 @@
           <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
           <script>hljs.initHighlightingOnLoad();</script>
         <title>My Python</title> 
-        <style>
+        <!-- <style>
           body {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-/*            height: 100vh;*/
+          }
+        </style> -->
+        <style>
+          .container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* Соотношение сторон 16:9 */
+          }
+          .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+          }
+          @media (orientation: landscape) {
+            /* Изменяем соотношение сторон для горизонтального положения экрана */
+            .container {
+              padding-top: 33.33%; /* Соотношение сторон 3:1 */
+            }
           }
         </style>
       </head>
