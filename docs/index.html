@@ -7361,8 +7361,10 @@ dictionaries</a><a> <small>(3.PyB340)</small></a></h6></span></h4>
                                                         <!-- list from rows in cells --> 
                                                         stdout_logfile=/home/user_name/newswebsite/app_flask.log <br>
                                                         <!-- list from rows in cells --> 
-                                                        ---------------------------------- <br>
+                                                        ----------------------------------  <br>
                                                         <!-- list from rows in cells --> 
+                                                        <b>Run get news:</b><br>        
+                                                        <!-- colums (rows) every cells in this row name -->
                                                         <b>first way start python file appnews.py using supervisor:</b><br>        
                                                         <!-- colums (rows) every cells in this row name -->
                                                         sudo nano /etc/supervisor/conf.d/appnews.conf <br>
@@ -7387,7 +7389,7 @@ dictionaries</a><a> <small>(3.PyB340)</small></a></h6></span></h4>
                                                         <!-- list from rows in cells --> 
                                                         ---------------------------------- <br>
                                                         <!-- list from rows in cells --> 
-                                                        <b>- creat file appnews.py (with app for gunicorn):</b><br>        
+                                                        <b>- creat file appnews.py (with app for gunicorn, working not correct):</b><br>        
                                                         <!-- colums (rows) every cells in this row name -->
                                                         start terminal: gunicorn appnews:app <br>
                                                         <!-- list from rows in cells --> 
@@ -7414,36 +7416,6 @@ dictionaries</a><a> <small>(3.PyB340)</small></a></h6></span></h4>
                                                         stdout_logfile=/home/user_name/newswebsite/app_gunicorn.log <br>
                                                         <!-- list from rows in cells --> 
                                                         &#34;&#34;&#34; <br>
-                                                        <!-- list from rows in cells --> 
-                                                        - creat config file for supervisor <br>
-                                                        <!-- list from rows in cells --> 
-                                                        -&gt; sudo nano /etc/supervisor/conf.d/getnews.conf <br>
-                                                        <!-- list from rows in cells --> 
-                                                        [program:getnews] <br>
-                                                        <!-- list from rows in cells --> 
-                                                        command=/home/user_name/newswebsite/env/bin/gunicorn appnews:app -b 0.0.0.0:8000 -w 1 <br>
-                                                        <!-- list from rows in cells --> 
-                                                        directory=/home/user_name/newswebsite/ <br>
-                                                        <!-- list from rows in cells --> 
-                                                        user = user_name <br>
-                                                        <!-- list from rows in cells --> 
-                                                        ---------------------------------- <br>
-                                                        <!-- list from rows in cells --> 
-                                                        -&gt; sudo nano /etc/supervisor/conf.d/getnews.conf <br>
-                                                        <!-- list from rows in cells --> 
-                                                        [program:appnews] <br>
-                                                        <!-- list from rows in cells --> 
-                                                        command=/home/user_name/newswebsite/env/bin/gunicorn --chdir /home/user_name/newswebsite appnews:app -w 1 -b 0.0.0.0:8000 --timeout 60 <br>
-                                                        <!-- list from rows in cells --> 
-                                                        directory=/home/user_name/newswebsite/ <br>
-                                                        <!-- list from rows in cells --> 
-                                                        user=user_name <br>
-                                                        <!-- list from rows in cells --> 
-                                                        autostart=true <br>
-                                                        <!-- list from rows in cells --> 
-                                                        autorestart=true <br>
-                                                        <!-- list from rows in cells --> 
-                                                        redirect_stderr=true <br>
                                                         <!-- list from rows in cells --> 
                                                         ---------------------------------- <br>
                                                         <!-- list from rows in cells --> 
