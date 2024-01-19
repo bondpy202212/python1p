@@ -7519,6 +7519,30 @@ dictionaries</a><a> <small>(3.PyB340)</small></a></h6></span></h4>
                                                         <!-- colums (rows) every cells in this row name -->
                                                         ----- <br>
                                                         <!-- list from rows in cells --> 
+                                                        <b>If CPU 100% with &#34;snapd&#34;:</b><br>        
+                                                        <!-- colums (rows) every cells in this row name -->
+                                                        - cd /etc/systemd/system/ <br>
+                                                        <!-- list from rows in cells --> 
+                                                        - sudo mkdir snapd.service.d <br>
+                                                        <!-- list from rows in cells --> 
+                                                        - cd <br>
+                                                        <!-- list from rows in cells --> 
+                                                        - sudo nano /etc/systemd/system/snapd.service.d/override.conf <br>
+                                                        <!-- list from rows in cells --> 
+                                                        -    [Service] <br>
+                                                        <!-- list from rows in cells --> 
+                                                           CPUQuota=50% <br>
+                                                        <!-- list from rows in cells --> 
+                                                        - sudo systemctl daemon-reload <br>
+                                                        <!-- list from rows in cells --> 
+                                                        - sudo systemctl restart snapd <br>
+                                                        <!-- list from rows in cells --> 
+                                                        - sudo journalctl -fu snapd (real time) <br>
+                                                        <!-- list from rows in cells --> 
+                                                        - sudo journalctl -n 20 -u snapd (last 20) <br>
+                                                        <!-- list from rows in cells --> 
+                                                        ----- <br>
+                                                        <!-- list from rows in cells --> 
                                      <hr>
                             <h4><span style="color:blue;"><a>f&#39;++_+</a><a> <small>(12.CMD)</small></a></h6></span></h4> 
                             <!-- rows names in sheets -->
