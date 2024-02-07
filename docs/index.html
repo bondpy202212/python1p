@@ -7409,6 +7409,8 @@ dictionaries</a><a> <small>(3.PyB340)</small></a></h6></span></h4>
                                                         <!-- list from rows in cells --> 
                                                         stdout_logfile=/home/user_name/newswebsite/app_supervisor.log <br>
                                                         <!-- list from rows in cells --> 
+                                                        command=chmod -R a+rwx /home/user_name/newswebsite <br>
+                                                        <!-- list from rows in cells --> 
                                                         ---------------------------------- <br>
                                                         <!-- list from rows in cells --> 
                                                         <b>- creat file appnews.py (with app for gunicorn, working not correct):</b><br>        
@@ -7416,6 +7418,20 @@ dictionaries</a><a> <small>(3.PyB340)</small></a></h6></span></h4>
                                                         start terminal: gunicorn appnews:app <br>
                                                         <!-- list from rows in cells --> 
                                                         start through supervisor: <br>
+                                                        <!-- list from rows in cells --> 
+                                                        ---------- <br>
+                                                        <!-- list from rows in cells --> 
+                                                        If error: sqlite3.OperationalError: attempt to write a readonly database <br>
+                                                        <!-- list from rows in cells --> 
+                                                        add file /etc/supervisor/conf.d/appnews.conf <br>
+                                                        <!-- list from rows in cells --> 
+                                                        ; Добавляем права доступа к каталогу <br>
+                                                        <!-- list from rows in cells --> 
+                                                        ; &#39;a+rwx&#39; устанавливает права на чтение, запись и выполнение для всех <br>
+                                                        <!-- list from rows in cells --> 
+                                                        command=chmod -R a+rwx /home/user_name/newswebsite <br>
+                                                        <!-- list from rows in cells --> 
+                                                        ---------- <br>
                                                         <!-- list from rows in cells --> 
                                                         &#34;&#34;&#34; <br>
                                                         <!-- list from rows in cells --> 
