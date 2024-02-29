@@ -7583,6 +7583,30 @@ dictionaries</a><a> <small>(3.PyB340)</small></a></h6></span></h4>
                                                         <!-- list from rows in cells --> 
                                                         sudo snapd refresh (snapd for install new packages) <br>
                                                         <!-- list from rows in cells --> 
+                                                        ----- <br>
+                                                        <!-- list from rows in cells --> 
+                                                        <b>Cleaning space disk:</b><br>        
+                                                        <!-- colums (rows) every cells in this row name -->
+                                                        sudo apt-get autoremove (sudo apt autoremove) <br>
+                                                        <!-- list from rows in cells --> 
+                                                        sudo apt-get clean (sudo apt clean) <br>
+                                                        <!-- list from rows in cells --> 
+                                                        sudo apt-get autoclean (sudo apt autoclean) <br>
+                                                        <!-- list from rows in cells --> 
+                                                        sudo journalctl --vacuum-size=100M <br>
+                                                        <!-- list from rows in cells --> 
+                                                        du -h --max-depth=1 -&gt; big folder: ./.cache, ./.local, . <br>
+                                                        <!-- list from rows in cells --> 
+                                                        rm -r ~/.cache/* <br>
+                                                        <!-- list from rows in cells --> 
+                                                        rm -rf ~/.local/share/* <br>
+                                                        <!-- list from rows in cells --> 
+                                                        sudo rm -r .jupyter <br>
+                                                        <!-- list from rows in cells --> 
+                                                        rm -r ~/.ipython <br>
+                                                        <!-- list from rows in cells --> 
+                                                        rm -r ~/.python_history <br>
+                                                        <!-- list from rows in cells --> 
                                      <hr>
             </div>
         </div>
