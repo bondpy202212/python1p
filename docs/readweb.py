@@ -1,6 +1,5 @@
 import requests
 
-
 def save_page_content(url, filename):
     try:
         response = requests.get(url)
@@ -15,4 +14,3 @@ if __name__ == "__main__":
     url = "http://127.0.0.1:5001"
     filename = "index.html"
     save_page_content(url, filename)
-    
