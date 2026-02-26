@@ -1,5 +1,6 @@
 import requests
 
+
 def save_page_content(url, filename):
     try:
         response = requests.get(url)
