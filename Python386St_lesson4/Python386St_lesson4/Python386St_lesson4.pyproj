@@ -1,0 +1,49 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>d2706b8f-c0b4-47fa-b6c1-6933636b86a0</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>a7_homework.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Python386St_lesson4</Name>
+    <RootNamespace>Python386St_lesson4</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="a1_LOOPS_while.py" />
+    <Compile Include="a2_for.py" />
+    <Compile Include="a3_continue_break.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a4_loops_example1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a5_loops_example2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a6_loops_example3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a7_homework.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
